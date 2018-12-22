@@ -3,7 +3,7 @@
 
 # print the git branch name if in a git project
 parse_git_branch() {
-  git branch | grep \* | cut -d ' ' -f2
+  git branch 2>/dev/null | grep \* | cut -d ' ' -f2
 }
 # set the input prompt symbol
 ARROW="❯"
